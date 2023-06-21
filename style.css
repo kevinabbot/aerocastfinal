@@ -1,0 +1,148 @@
+.activeMapButton {
+    border: 2px solid white;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+}
+
+/* Styles for the Main content */
+
+.mainContent {
+    width: 100%;
+}
+
+.timeSelection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+#buttonContainer {
+    flex-shrink: 3;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#buttonContainer .mapButton {
+    border: none;
+    background-color: var(--accent);
+    color: black;
+    margin: 4px;
+    padding: 0.5vw;
+    font-weight: bolder;
+    font-size: 1.3vw;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#buttonContainer .mapButton.activeMapButton {
+    outline: 4px solid white;
+}
+
+
+.nextprev {
+    width: fit-content;
+    display: flex;
+}
+
+#previousButton,
+#nextButton {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+#previousButton img,
+#nextButton img {
+    height: 3vw;
+    object-fit: stretch;
+    filter: invert(100%)
+}
+
+@media only screen and (max-width: 800px) {
+    .nextprev {
+        flex-direction: column;
+    }
+
+    #previousButton img,
+    #nextButton img {
+        height: 2vw;
+    }
+
+}
+
+.mapContainer {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    column-gap: 20px;
+}
+
+.mapWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#mapDetails {
+    width: 100%;
+    flex: 0 1 auto;
+}
+
+#mapDisplay {
+    width: 100%;
+    height: 600px;
+    flex: 1 1 auto;
+}
+
+#mapRange {
+    width: 98%;
+    margin-inline: auto;
+    margin-top: 10px;
+}
+
+
+
+#previousButton img:hover,
+#nextButton img:hover {
+    filter: invert(80%)
+}
+
+/* Styles for the sidebar */
+.sidebar {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    width: 95%;
+    height: 700px;
+    color: var(--accent);
+}
+
+.sidebarItem {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarTitle {
+    color: var(--accent);
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sidebarContent {
+    padding: 10px;
+    overflow: auto;
+    border: 2px solid var(--accent);
+}
+
+.sidebarContent img {
+    max-width: 100%;
+    object-fit: contain;
+}

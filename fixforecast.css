@@ -1,0 +1,17 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+}
+#mapRange {
+    width: 98%;
+    margin-inline: auto;
+}
+.mapContainer {
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+#mapDisplay{
+    height: 67vh;
+}

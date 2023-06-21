@@ -1,0 +1,66 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--accent);
+    width: 100%;
+    margin-bottom: 5px;
+}
+.section h2{
+    font-size: 2em;
+}
+
+.section img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+.mainContent {
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapRange {
+    width: 100%;
+    margin-inline: auto;
+}
+
+
+.maps {
+    width: calc(100% -4px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    border:8px solid var(--accent);
+}
+
+.maps img {
+    width: 100%;
+    height: 100%;
+}
+
+#mainMap {
+    grid-column: 1 / span 3;
+}
+
+#windspeedMap {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#winddirMap {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#lightposMap {
+    grid-column: 3;
+    grid-row: 2;
+}

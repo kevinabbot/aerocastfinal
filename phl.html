@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="jfk.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <title>PHL</title>
+    <style>
+        body {
+            background-color: rgb(31, 29, 24);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/fdf-logo.jpg" alt="">
+        <nav>
+            <h2>METEOROLOGIST TOOLS AIRPORT SELECTION</h2>
+            <div class="aButtons">
+                <div class="aButton">
+                    <a class="anchorButton" href="./index.html">HOME</a>
+                </div>
+                <div class="aButton">
+                    <a class="anchorButton" href="./fixforecast.html">FIXFORECAST</a>
+                </div>
+                <div class="aButton">
+                    <button class="dropdownButton">NORTH EAST</button>
+                    <ul class="dropdownContent">
+                        <li><a href="./iad.html">IAD</a></li>
+                        <li><a href="./jfk.html">JFK</a></li>
+                        <li><a href="./dca.html">DCA</a></li>
+                        <li><a href="./phl.html">PHL</a></li>
+                        <li><a href="./bwi.html">BWI</a></li>
+                        <li><a href="./pit.html">PIT</a></li>
+                        <li><a href="./bos.html">BOS</a></li>
+                    </ul>
+                </div>
+                <div class="aButton">
+                    <button class="dropdownButton">SOUTH EAST</button>
+                    <ul class="dropdownContent">
+                        <li><a href="./atl.html">ATL</a></li>
+                        <li><a href="./bna.html">BNA</a></li>
+                        <li><a href="./clt.html">CTL</a></li>
+                        <li><a href="./rdu.html">RDU</a></li>
+                        <li><a href="./jax.html">JAX</a></li>
+                        <li><a href="./mia.html">MIA</a></li>
+                        <li><a href="./mco.html">MCO</a></li>
+                        <li><a href="./tpa.html">TPA</a></li>
+                    </ul>
+                </div>
+                <div class="aButton">
+                    <button class="dropdownButton">MID WEST</button>
+                    <ul class="dropdownContent">
+                        <li><a href="./msp.html">MSP</a></li>
+                        <li><a href="./ord.html">ORD</a></li>
+                        <li><a href="./cle.html">CLE</a></li>
+                        <li><a href="./mci.html">MCI</a></li>
+                        <li><a href="./dtw.html">DTW</a></li>
+                        <li><a href="./stl.html">STL</a></li>
+                        <li><a href="./ind.html">IND</a></li>
+                    </ul>
+                </div>
+                <div class="aButton">
+                    <button class="dropdownButton">CENTRAL</button>
+                    <ul class="dropdownContent">
+                        <li><a href="./okc.html">OKC</a></li>
+                        <li><a href="./dfw.html">DFW</a></li>
+                        <li><a href="./aus.html">AUS</a></li>
+                        <li><a href="./iah.html">IAH</a></li>
+                    </ul>
+                </div>
+                <div class="aButton">
+                    <button class="dropdownButton">WEST</button>
+                    <ul class="dropdownContent">
+                        <li><a href="./phx.html">PHX</a></li>
+                        <li><a href="./den.html">DEN</a></li>
+                        <li><a href="./las.html">LAS</a></li>
+                        <li><a href="./slc.html">SLC</a></li>
+                    </ul>
+                </div>
+                <div class="aButton">
+                    <button class="dropdownButton">PACIFIC</button>
+                    <ul class="dropdownContent">
+                        <li><a href="./san.html">SAN</a></li>
+                        <li><a href="./lax.html">LAX</a></li>
+                        <li><a href="./sea.html">SEA</a></li>
+                        <li><a href="./sfo.html">SFO</a></li>
+                        <li><a href="./pdx.html">PDX</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="section">
+                <h2>PHL IMPACTS FORECAST</h2>
+                <img src="assets/PHL_chart.png" alt="JFK IMPACTS CHART">
+            </div>
+            <div class="section">
+                <h2>PHL STAR FORECAST</h2>
+                <img src="assets/PHL_fix_chart.png" alt="JFK STAR CHART">
+            </div>
+            <div class="mainContent">
+                <input type="range" name="mapRange" id="mapRange" value="0">
+                <div class="maps">
+                    <img src="assets/PHL_2.png" alt="JFK" id="mainMap">
+                    <img src="assets/windspeed_PHL_2.png" alt="JFK Wind Speed" id="windSpeedMap">
+                    <img src="assets/winddir_PHL_2.png" alt="JFK Wind Direction" id="windDirMap">
+                    <img src="assets/lightposs_PHL_2.png" alt="JFK Light Position" id="lightPosMap">
+                </div>
+            </div>
+    </main>
+    <script src="./utils.js"></script>
+    <script src="phl.js"></script>
+</body>
+
+</html>
